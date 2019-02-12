@@ -1,0 +1,94 @@
+/* the style sheet! */
+/*
+body {
+    color: rgb(65,75,86);
+}
+*/
+
+body {
+    color: rgb(65, 75, 86);
+    font-family:  arial, georgia;
+    margin: 0px;
+}
+
+div {
+    /* Make content area of the box 100% of the viewport height  */
+    min-height: 100vh;
+    /* Made the width 100% of the viewport width */
+    width: 100vw;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+img {
+    /* Use flexible box layout */
+    display: flex;
+    /* Set veritcal margin to zero, put horizontal margin to auto, which means center the img border */
+    margin: 0 auto;
+    /* 20px padding for top, right, bottom, left, basically north east south west == clockwise from top */
+    padding: 30px;
+    /* Create a circle border radius around the image*/
+    border-radius: 150px;
+}
+
+p {
+    /* 40% the width of their parent element, which is the div. The div is 100% of the viewport */
+    width: 40%;
+    /* vertical margin, 10% of vh - horizontal height 10% */
+    margin: 10vh 10vw;
+    /* Twice normal font size */
+    font-size: 2em;
+}
+
+a {
+    color: rgb(0,0,0);
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10%;
+    font-size: 3em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li#lower {
+    margin-top: 7%;
+}
+
+li#lowest {
+    margin-top: 14%;
+}
+
+div.contrast {
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0 20px;
+}
+
+#hidden {
+    display: none;
+}
